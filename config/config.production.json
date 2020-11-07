@@ -1,0 +1,46 @@
+{
+  "env": "production",
+  "cluster": true,
+  "server": {
+    "host": "127.0.0.1",
+    "port": "8001",
+    "name": "Humble CDN",
+    "protocol": "http"
+  },
+  "logging": {
+    "enabled": true,
+    "level": "warn",
+    "path": "./log",
+    "filename": "cdn",
+    "extension": "log",
+    "accessLog": {
+      "enabled": false
+    }
+  },
+  "notFound": {
+    "statusCode": 404,
+    "images": {
+      "enabled": true,
+      "path": "./missing.jpg"
+    }
+  },
+  "caching": {
+    "ttl": "3600",
+    "directory": {
+      "enabled": true,
+      "path": "./cache"
+    }
+  },
+  "images": {
+    "remote": {
+      "enabled": true,
+      "path": "http://127.0.0.1:3000/images"
+    }
+  },
+  "assets": {
+    "remote": {
+      "enabled": true,
+      "path": "http://127.0.0.1:3000/assets"
+    }
+  }
+}

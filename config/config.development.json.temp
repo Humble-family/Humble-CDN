@@ -1,0 +1,38 @@
+{
+  "env": "development",
+  "cluster": true,
+  "server": {
+    "host": "127.0.0.1",
+    "port": "8001",
+    "name": "Humble CDN",
+    "protocol": "http"
+  },
+  "logging": {
+    "enabled": true,
+    "level": "warn",
+    "path": "./log",
+    "filename": "cdn",
+    "extension": "log",
+    "accessLog": {
+      "enabled": false
+    }
+  },
+  "caching": {
+    "ttl": "0",
+    "directory": {
+      "enabled": false
+    }
+  },
+  "images": {
+    "remote": {
+      "enabled": false
+    },
+    "directory": {
+      "enabled": true,
+      "path": "./images"
+    },
+    "s3": {
+      "enabled": false
+    }
+  }
+}

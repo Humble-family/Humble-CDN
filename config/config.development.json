@@ -1,0 +1,69 @@
+{
+  "env": "development",
+  "cluster": true,
+  "server": {
+    "host": "127.0.0.1",
+    "port": "8001",
+    "name": "Humble CDN",
+    "protocol": "http"
+  },
+  "logging": {
+    "enabled": true,
+    "level": "warn",
+    "path": "./log",
+    "filename": "cdn",
+    "extension": "log",
+    "accessLog": {
+      "enabled": false
+    }
+  },
+  "caching": {
+    "ttl": "0",
+    "directory": {
+      "enabled": false
+    }
+  },
+  // "notFound": {
+  //   "statusCode": 404,
+  //   "images": {
+  //     "enabled": true,
+  //     "path": "./missing.png"
+  //   }
+  // },
+  "images": {
+    "directory": {
+      "enabled": true,
+      "path": "./"
+    },
+    "remote": {
+      "enabled": false
+    },
+    "s3": {
+      "enabled": false
+    }
+  },
+  "videos": {
+    "directory": {
+      "enabled": true,
+      "path": "./"
+    },
+    "remote": {
+      "enabled": false
+    },
+    "s3": {
+      "enabled": false
+    }
+  },
+  "audios": {
+    "directory": {
+      "enabled": true,
+      "path": "./"
+    },
+    "remote": {
+      "enabled": false
+    },
+    "s3": {
+      "enabled": false
+    }
+  }
+}
