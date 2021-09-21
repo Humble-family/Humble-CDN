@@ -4398,9 +4398,10 @@ image-size-stream@1.1.0:
     readable-stream "^1.0.33"
     tryit "^1.0.1"
 
-"image-size@git+https://github.com/netroy/image-size#da2c863807a3e9602617bdd357b0de3ab4a064c1":
+image-size@netroy/image-size#da2c863807a3e9602617bdd357b0de3ab4a064c1:
   version "0.3.5"
-  resolved "git+https://github.com/netroy/image-size#da2c863807a3e9602617bdd357b0de3ab4a064c1"
+  uid da2c863807a3e9602617bdd357b0de3ab4a064c1
+  resolved "https://codeload.github.com/netroy/image-size/tar.gz/da2c863807a3e9602617bdd357b0de3ab4a064c1"
 
 imagemin-jpegtran@^6.0.0:
   version "6.0.0"
@@ -6023,9 +6024,9 @@ object-hash@^2.0.3:
   integrity sha512-JPKn0GMu+Fa3zt3Bmr66JhokJU5BaNBIh4ZeTlaCBzrBsOeXzwcKKAK1tbLiPKgvwmPXsDvvLHoWh5Bm7ofIYg==
 
 object-path@^0.11.4:
-  version "0.11.5"
-  resolved "https://registry.yarnpkg.com/object-path/-/object-path-0.11.5.tgz#d4e3cf19601a5140a55a16ad712019a9c50b577a"
-  integrity sha512-jgSbThcoR/s+XumvGMTMf81QVBmah+/Q7K7YduKeKVWL7N111unR2d6pZZarSk6kY/caeNxUDyxOvMWyzoU2eg==
+  version "0.11.8"
+  resolved "https://registry.yarnpkg.com/object-path/-/object-path-0.11.8.tgz#ed002c02bbdd0070b78a27455e8ae01fc14d4742"
+  integrity sha512-YJjNZrlXJFM42wTBn6zgOJVar9KFJvzx6sTWDte8sWZF//cnjl0BxHNpfZx+ZffXX63A9q0b1zsFiBX4g4X5KA==
 
 object-visit@^1.0.0:
   version "1.0.1"
